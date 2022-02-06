@@ -9,18 +9,26 @@ Getting Started
 ============
 We recommend using a python virtual environment
 
-``python3 -m vnv WIDS python=3.10``
+```
+python3 -m venv WIDS python=3.10
+```
 
 Install the requirements
 
-``pip3 install -r requirements.txt``
+```
+pip3 install -r requirements.txt
+```
 
 Train the model
 
-``python train.py``
+```
+python train.py
+```
 
 You can visualize the dataset by passing the command ``-v True`` and change the epoch number by setting ``-e <number_of_epochs>``.
 
 The training statistics can be found on tensorboard log directory and can be accessed by running:
 
-``tensorboard --logdir runs``
+```
+tensorboard --logdir runs
+```
